@@ -1,0 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class Click : MonoBehaviour
+{
+    public string sceneNmae;
+
+    void OnMouseDown()
+    {
+        SceneManager.LoadScene(sceneNmae);  
+    }
+}
+//클릭했을 떄 씬 넘어가는 코드입니다
