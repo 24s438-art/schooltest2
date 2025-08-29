@@ -1,0 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class Ghost : MonoBehaviour
+{
+    public string targetObjectName;
+    public string sceneName;
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        if (collision.gameObject.name == targetObjectName)
+        {
+
+            SceneManager.LoadScene(sceneName);
+        }
+    }
+}
+//유령과 부딫히면 게임오버 씬으로 넘어가는 코드 입니다
