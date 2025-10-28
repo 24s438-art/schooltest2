@@ -1,0 +1,12 @@
+using UnityEngine;
+
+
+public class move : MonoBehaviour
+{
+    public float speed = -5;
+
+    void FixedUpdate()
+    {
+        this.transform.Translate(0, speed/50, 0);
+    }
+}
