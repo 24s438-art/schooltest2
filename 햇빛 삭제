@@ -1,0 +1,11 @@
+using UnityEngine;
+
+public class delete : MonoBehaviour
+{
+    public float limitSec = 3;
+    
+    void start()
+    {
+        Destroy(this.gameObject, limitSec);
+    }
+}
